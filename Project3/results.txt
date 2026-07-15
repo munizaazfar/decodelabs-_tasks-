@@ -3,22 +3,16 @@
 ================================================================
 
 --- Session #1 ---
-User Query: web
+User Query: database
 
 Generated Recommendations:
-Rank 1: Web Development (Frontend & Backend) (Match Confidence: 14.81%)
-   Description: Build modern websites using HTML, CSS, JavaScript, responsive styles, PHP, and server-side configurations.
-   Core Tags: web, frontend, backend, php, html, css, javascript, responsive, website, server
+Rank 1: Database Management & SQL Queries (Match Confidence: 26.63%)
+   Description: Design relational database schemas, write structured SQL queries, optimize indexes, and debug table connections.
+   Core Tags: database, sql, mysql, relational, queries, schema, tables, optimize, index
 
-----------------------------------------------------------------
-
---- Session #2 ---
-User Query: cloud computing
-
-Generated Recommendations:
-Rank 1: Cloud Computing & DevOps Automation (Match Confidence: 19.78%)
-   Description: Configure cloud infrastructure, deployment pipelines, virtual networks, automation scripts, and server routing.
-   Core Tags: cloud, devops, aws, automation, server, deployment, pipelines, routing, network
+Rank 2: Mobile App Development with Flutter & Dart (Match Confidence: 21.85%)
+   Description: Develop cross-platform native mobile applications, state management, database connections, and custom UI design using Flutter and Dart.
+   Core Tags: mobile, flutter, dart, cross-platform, app, database, ui, state management, banking app
 
 ----------------------------------------------------------------
 
