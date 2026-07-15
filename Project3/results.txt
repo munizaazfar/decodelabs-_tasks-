@@ -1,0 +1,24 @@
+================================================================
+        DECODELABS COGNITIVE RECOMMENDATION LOGS                
+================================================================
+
+--- Session #1 ---
+User Query: web
+
+Generated Recommendations:
+Rank 1: Web Development (Frontend & Backend) (Match Confidence: 14.81%)
+   Description: Build modern websites using HTML, CSS, JavaScript, responsive styles, PHP, and server-side configurations.
+   Core Tags: web, frontend, backend, php, html, css, javascript, responsive, website, server
+
+----------------------------------------------------------------
+
+--- Session #2 ---
+User Query: cloud computing
+
+Generated Recommendations:
+Rank 1: Cloud Computing & DevOps Automation (Match Confidence: 19.78%)
+   Description: Configure cloud infrastructure, deployment pipelines, virtual networks, automation scripts, and server routing.
+   Core Tags: cloud, devops, aws, automation, server, deployment, pipelines, routing, network
+
+----------------------------------------------------------------
+
