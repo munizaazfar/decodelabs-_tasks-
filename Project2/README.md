@@ -1,23 +1,47 @@
-# AI Project 2 - Data Classification (Iris Dataset)
+# 🌸 Iris Flower Classification Dashboard (KNN)
 
-## 📌 Project Description
-This project implements a supervised machine learning classification model on the classic **Iris Flower Dataset**. Using the **K-Nearest Neighbors (KNN)** algorithm, the model classifies iris flowers into three distinct species (`Setosa`, `Versicolor`, and `Virginica`) based on their physical dimensions (sepal and petal lengths/widths).
+## 📌 Project Overview
+This project presents an interactive **Supervised Machine Learning Web Application** built using **Streamlit**, **Scikit-Learn**, and **Python**. The application implements the **K-Nearest Neighbors (KNN)** classification algorithm on the classic **Iris Flower Dataset** to predict plant species (`Setosa`, `Versicolor`, and `Virginica`) based on custom physical measurements (sepal & petal dimensions).
 
-## 🚀 Pipeline (IPO Framework)
-Following the standard Input-Process-Output (IPO) framework, the project is structured as follows:
+---
 
-* **Input:** * Loaded the Iris Dataset containing 150 samples, 4 features, and 3 target classes.
-* **Process:**
-  * **Train-Test Split:** Split the dataset into 80% Training and 20% Testing sets with randomized shuffling to eliminate any order bias.
-  * **Feature Scaling:** Applied `StandardScaler` to normalize features, centering the mean at 0 with a variance of 1.
-  * **Model Training:** Trained a **K-Nearest Neighbors (KNN)** classifier with $K = 5$.
-* **Output:** * Generated predictions and evaluated performance using a **Confusion Matrix** and **F1-Score**.
+## ✨ Key Features & Interactive Capabilities
 
-## 📊 Results & Performance Evaluation
-The model achieved perfect classification accuracy on the test dataset:
-* **F1-Score (Weighted):** 1.0000 (100% Accuracy)
-* **Confusion Matrix:**
-  ```text
-  [[10  0  0]
-   [ 0  9  0]
-   [ 0  0 11]]
+* **🎛️ Real-Time Hyperparameter Tuning:** Adjust the $K$-neighbors parameter ($1$ to $21$) and test-train split ratio ($10\%$ to $50\%$) on the fly via sidebar controls.
+* **🔮 Live Prediction & Probability Allocation:** Slide custom feature values to instantly compute predicted species and view confidence percentages with class probability bar charts.
+* **📈 Model Performance Diagnostics:**
+  * Real-time calculation of **Accuracy**, **Weighted F1-Score**, and **Test Sample Counts**.
+  * **Confusion Matrix** heatmap visualization.
+  * **Elbow Curve Diagnostics** (Accuracy vs. $K$-value plot) to evaluate hyperparameter stability.
+* **📊 2D Feature Projection Scatter Plot:** Interactive multi-dimensional scatter mapping with selectable X/Y axes and visual indicator markers for simulated user inputs.
+* **🎨 Custom Dark-Slate UI/UX:** High-contrast, custom CSS styling optimized for enhanced readability, clean metric cards, and zero header clutter.
+
+---
+
+## 🚀 Pipeline Architecture (IPO Framework)
+
+Following the standard **Input-Process-Output (IPO)** engineering model:
+
+### 1. Input Data
+* **Dataset:** 150 samples with 4 continuous numerical features (`Sepal Length`, `Sepal Width`, `Petal Length`, `Petal Width`) and 3 target classes.
+* **User Input:** Dynamic values supplied via UI interactive sliders.
+
+### 2. Processing Pipeline
+* **Train-Test Split:** Stratified splitting based on the user-selected test set ratio (default: 80% Train / 20% Test).
+* **Feature Normalization:** Applied `StandardScaler` to transform features to standard normal distribution ($\mu = 0$, $\sigma = 1$).
+* **Classification Algorithm:** Trained `KNeighborsClassifier` dynamically reacting to selected $K$ values.
+
+### 3. Output & Metrics
+* Class prediction outputs, confidence percentages, Seaborn/Matplotlib visualization graphs, and performance metrics.
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+* **Language:** Python 3.x
+* **Web Framework:** Streamlit
+* **Machine Learning:** Scikit-Learn
+* **Data Processing:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+
+---
